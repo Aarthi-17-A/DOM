@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <h1><i class="fa fa-check-circle" aria-hidden="true"></i><span>My Todo List</span></h1>
+    <div class="input-container">
+        <input type="text" id="input" placeholder="What needs to be done?"/>
+        <button id="addbtn"><i class="fa fa-plus" aria-hidden="true"></i></button>
+    </div>
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+    <ul id="tasklist">
+        <!-- <li><input type="checkbox"><span class="completed">Eat breakfast</span><i class="fa fa-trash" aria-hidden="true"></i></li>
+
+        <li><input type="checkbox"><span>Study Biology</span><i class="fa fa-trash" aria-hidden="true"></i></li>
+
+        <li><input type="checkbox"><span>Go to the Gym</span><i class="fa fa-trash" aria-hidden="true"></i></li> -->
+
+    </ul>
+    <div class="list-footer">
+        <span id="task-counter">0 items left</span>
+        <button id="clear-completed">Clear Completed</button>
+    </div>
+    </div>
+    <script src="todo.js"></script>
+</body>
+</html>
