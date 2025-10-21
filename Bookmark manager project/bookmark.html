@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bookmark.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bookmark Manager</h1>
+        <div class="add-bookmark-form">
+            <h2>Add New Bookmark</h2>
+            <form id="bookmark-form">
+                <div class="form-group">
+                    <label for="website-title">Website Title:</label>
+                    <input type="text" id="website-title" name="website-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="website-url">Website Url:</label>
+                    <input type="url" placeholder="https://example.com" id="website-url" name="website-url" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category" name="category" required>
+                        <option>Work</option>
+                        <option>Study</option>
+                        <option>Entertainment</option>
+                    </select>
+                </div>
+                <button type="submit">Add Bookmark</button>
+            </form>
+        </div> 
+        <div class="filter-section">
+            <h2>Filter Bookmarks</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Work">Work</button>
+                <button class="filter-btn" data-filter="Study">Study</button>
+                <button class="filter-btn" data-filter="Entertainment">Entertainment</button>
+            </div>
+        </div>  
+        <div class="bookmarks-container">
+            <h2>Your Bookmarks</h2>
+            <div id="bookmarks-list">
+                <!-- <div class="bookmark-item">
+                    <div class="bookmark-info">
+                        <h3>W3 Schools</h3>
+                        <a href="https://www.w3schools.com/" class="bookmark-link" target="_blank">https://www.w3schools.com/</a>
+                        <div class="bookmark-category">Education</div>
+                    </div>
+                    <button class="delete-btn">Delete</button>
+                </div>
+
+                <div class="bookmark-item">
+                    <div class="bookmark-info">
+                        <h3>YouTube</h3>
+                        <a href="https://www.youtube.com" class="bookmark-link" target="_blank">https://www.youtube.com</a>
+                        <div class="bookmark-category">Entertainment</div>
+                    </div>
+                    <button class="delete-btn">Delete</button>
+                </div> -->
+
+            </div>
+        </div>   
+    </div>
+        <script src="bookmark.js"></script>
+</body>
+</html>
