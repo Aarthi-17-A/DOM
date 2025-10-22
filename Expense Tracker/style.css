@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+input, select, button {
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+/* Adds spacing between label and delete button */
+li {
+  padding: 10px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
+
+.delete-btn {
+  margin-left: auto;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.label {
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+}
+.Food {
+  background: #28a745;
+}
+.Transport {
+  background: #ffc107;
+}
+.Shopping {
+  background: #dc3545;
+}
